@@ -27,7 +27,7 @@ jobs:
       - run: 
           name: "npm test"
           command: sudo npm test a
-  workflows:
+workflows:
     build_and_test:
       jobs:
         - build
