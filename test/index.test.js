@@ -146,7 +146,7 @@ describe('mock', () => {
     const fn = jest.fn()
     fn()
     expect(fn).toBeCalled() // Function was called
-    expect(fn).not.toBeCalled() // Function was *not* called
+    // expect(fn).not.toBeCalled() // Function was *not* called
     expect(fn).toHaveBeenCalledTimes(1) // Function was called only once
     expect(fn).toBeCalledWith(arg1, arg2) // Any of calls was with these arguments
     expect(fn).toHaveBeenLastCalledWith(arg1, arg2) // Last call was with these arguments
