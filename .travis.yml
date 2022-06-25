@@ -1,0 +1,18 @@
+sudo: false
+language: node_js
+node_js:
+  - 'node'
+  - '6'
+  - '5'
+  - '4'
+branches:
+  only:
+    - master
+    - main
+cache:
+  directories:
+    - node_modules
+install:
+  - npm install && cd ..
+script:
+  - npm run test
