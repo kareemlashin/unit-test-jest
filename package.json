@@ -17,12 +17,8 @@
     "jest": "^28.1.1",
     "jest-extended": "^2.0.0"
   },   
-   "majestic": {
-    "jestScriptPath": "../node_modules/jest/bin/jest.js",
-    "setupFilesAfterEnv": ["./script/index.js"],
-    
-    "env": {
-      "CI": "true"
-    }
-}
+  "jest": {
+    "verbose": true,
+    "collectCoverage ":true
+  }
 }

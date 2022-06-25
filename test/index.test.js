@@ -23,7 +23,6 @@ describe("makePoniesPink", () => {
     // test.skip
     // describe.only
     // test.only
-});
 
 test("null", () => {
     const n = null;
@@ -161,4 +160,5 @@ describe('mock', () => {
         ['second', 'call', 'args'],
     ]) // Multiple calls
     expect(fn.mock.calls[0][0]).toBe(2) // fn.mock.calls[0][0] — the first argument of the first call
+});
 });
