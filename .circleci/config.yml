@@ -26,11 +26,11 @@ jobs:
           command: sudo npm install
       - run: 
           name: "npm test"
-          command: sudo npm test a
+          command: sudo npm test
 workflows:
     build_and_test:
       jobs:
-        - build
+        - test
         - test:
             requires:
-              - build
+              - test
