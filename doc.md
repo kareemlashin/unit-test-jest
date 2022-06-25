@@ -1,0 +1,1 @@
+--watchAll --coverage
